@@ -1,0 +1,13 @@
+﻿@model VideoStore.Models.Movie
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<li><text>Genre: </text>@Model.Genre.Name</li>
+<li><text>Release Date: </text>@Model.ReleaseDate</li>
+<li><text>Date Added: </text>@Model.DateAdded</li>
+<li><text>Number in Stock: </text>@Model.NumberInStock</li>
+

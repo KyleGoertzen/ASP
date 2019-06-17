@@ -6,11 +6,12 @@ using System.Web.Mvc;
 
 namespace VideoStore.Controllers
 {
+    [AllowAnonymous]
     public class HomeController : Controller
     {
         public ActionResult Index()
         {
-            return View();
+            return View("../Rentals/New");
         }
 
         public ActionResult About()
